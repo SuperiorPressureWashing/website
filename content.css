@@ -1,0 +1,213 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
+.content-section{
+    padding-top: 5vh;
+    width: 100%;
+    /* background-color: #d5dcf1; */
+    background: linear-gradient(to left, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.content-item{
+    width: 100%;
+    min-height: 10vh;
+    /* border: 1px solid #ccc; */
+    font-family: "Playfair Display", serif;
+    padding-bottom: 30px;
+    
+}
+
+.content-item .title{
+    display: inline-block;
+    min-width: 90%;
+    font-weight: 500;
+    font-size: 3vh;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.212);
+    margin: 10px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    /* padding-left: 5%; */
+}
+
+.content-item .text{
+    font-size: 2vh;
+    padding-left: 2vh;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
+/* LISTS */
+ul{
+    padding-left: 4vh;
+}
+ul.building-list{
+    display: inline-block;
+    width: 40%;
+    font-family: sans-serif;
+    font-size: 2vh;
+    position: relative;
+}
+
+ul.building-list li{
+    margin-bottom: 1vh;
+}
+
+ul.house-list{
+    display: inline-block;
+    width: 80%;
+    font-family: sans-serif;
+    font-size: 2vh;
+    position: relative;
+    padding-top: 2vh;
+}
+
+ul.house-list li{
+    margin-bottom: 1vh;
+}
+
+ul.house-list li span{
+    font-weight: 800;
+}
+
+/* BUILDINGS */
+
+.buildings-section{
+    width: 100%;
+    aspect-ratio: 3/1;
+    border: 2px solid rgb(117, 117, 117);
+}
+
+.buildings-item{
+    display: inline-block;
+}
+
+/* SPECIFIC ITEMS */
+
+.content-site-desc{
+    width: 100%;
+    min-height: 15vh;
+}
+
+.content-site-desc .title{
+    font-size: 3vh;
+    font-weight: 500;
+}
+
+.content-site-desc .title span{
+    font-size: 4vh;
+    font-weight: 800;
+    
+}
+
+.content-site-desc .text{
+    font-size: 2vh;
+    
+}
+
+@media only screen and (min-width: 900px) {
+    .content-section{
+        padding-top: 5vw;
+        width: 90%;
+        position: relative;
+        left: 10%;
+    }
+
+    .content-item{
+        width: 50%;
+        min-height: 10vw;
+        /* border: 1px solid #ccc; */
+        font-family: serif;
+        padding-left: 10vw;
+        padding-bottom: 1vw;
+        
+    }
+    
+    .content-item .title{
+        display: inline-block;
+        min-width: 80%;
+        font-weight: 500;
+        font-size: 2vw;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.212);
+        margin: 10px;
+        margin-bottom: 20px;
+        padding-bottom: 0;
+        /* padding-left: 5%; */
+    }
+    
+    .content-item .text{
+        font-size: 1vw;
+        padding-left: 2vw;
+        font-weight: 500;
+        font-family: sans-serif;
+    }
+    
+    /* LISTS */
+    ul{
+        padding-left: 4vw;
+    }
+    li{
+        font-family: sans-serif;
+    }
+    ul.building-list{
+        display: inline-block;
+        width: 40%;
+        font-family: sans-serif;
+        font-size: 1.3vw;
+        position: relative;
+    }
+    
+    ul.building-list li{
+        margin-bottom: 1vw;
+    }
+    
+    ul.house-list{
+        display: inline-block;
+        width: 80%;
+        font-family: sans-serif;
+        font-size: 1vw;
+        position: relative;
+    }
+    
+    ul.house-list li{
+        margin-bottom: 1vw;
+    }
+    
+    ul.house-list li span{
+        font-weight: 800;
+    }
+    
+    /* BUILDINGS */
+    
+    .buildings-section{
+        width: 100%;
+        aspect-ratio: 3/1;
+        border: 2px solid rgb(117, 117, 117);
+    }
+    
+    .buildings-item{
+        display: inline-block;
+    }
+    
+    /* SPECIFIC ITEMS */
+    
+    .content-site-desc{
+        width: 60%;
+        min-height: 15vw;
+    }
+    
+    .content-site-desc .title{
+        font-size: 2.5vw;
+        font-weight: 500;
+    }
+    
+    .content-site-desc .title span{
+        font-size: 3vw;
+        font-weight: 800;
+        
+    }
+    
+    .content-site-desc .text{
+        font-size: 1.3vw;
+        
+    }
+
+}

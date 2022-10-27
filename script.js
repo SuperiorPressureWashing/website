@@ -13,6 +13,13 @@ const contactScript = {
                 openContactBox();
             }
         });
+        document.getElementById("cButton").addEventListener("click", (evt)=>{
+            if(boxOpen){
+                closeContactBox();
+            }else{
+                openContactBox();
+            }
+        });
         contactBox.addEventListener("mousedown", ()=>{
              contactDown = true;
         });

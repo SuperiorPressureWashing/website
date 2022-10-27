@@ -41,7 +41,7 @@ ul{
 }
 ul.building-list{
     display: inline-block;
-    width: 40%;
+    width: 30%;
     font-family: sans-serif;
     font-size: 2vh;
     position: relative;
@@ -102,6 +102,9 @@ ul.house-list li span{
     font-size: 2vh;
     
 }
+ul.place-list{
+    width: 50%; 
+}
 
 @media only screen and (min-width: 900px) {
     .content-section{
@@ -149,12 +152,18 @@ ul.house-list li span{
     }
     ul.building-list{
         display: inline-block;
-        width: 40%;
+        width: 30%;
+
         font-family: sans-serif;
         font-size: 1.3vw;
         position: relative;
     }
-    
+    ul.place-list{
+        width: 50%; 
+    }
+    .building{
+        width: 55%;
+    }
     ul.building-list li{
         margin-bottom: 1vw;
     }

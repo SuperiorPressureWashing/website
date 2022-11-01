@@ -323,11 +323,13 @@ body{
 
 .call-now{
     text-align: center;
-    font-size: 4vh;
+    font-size: 3vh;
     font-weight: bold;
     padding: 4vh 0;
-    margin-bottom: 4vh;
+    padding-bottom: 8vh;
+    
     position: relative;
+    border-bottom: 2vh solid transparent;
 }
 
 .call-now span{
@@ -335,7 +337,7 @@ body{
 }
 .call-now button{
     position: absolute;
-    bottom: 0;
+    bottom: 2vh;
     width: 30vh;
     height: 4vh;
     left: calc(50% - 15vh);
@@ -347,6 +349,7 @@ body{
     font-weight: 800;
     color: rgb(204, 204, 204);
     transition: 0.2s background-color ease-in-out;
+    cursor: pointer;
 }
 
 .call-now button:hover{
@@ -678,19 +681,22 @@ and (min-width: 900px) {
         display: inline-block;
         width: 60%;
         margin: 2vw 0 2vw 20%;
+        
         border-bottom: 2px solid black;
     }
 
     .call-now{
-        font-size: 4vw;
+        font-size: 3vw;
         padding: 4vw 0;
-        margin-bottom: 4vw;
+        margin-bottom:0;
+        border-bottom: 8vw solid transparent;
     }
     .call-now button{
         width: 30vw;
         height: 4vw;
         left: calc(50% - 15vw);
         font-size: 2.5vw;
+        bottom:-1vw;
         border-radius: 20px;
     }
     

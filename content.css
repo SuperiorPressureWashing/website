@@ -141,14 +141,65 @@ ul.place-list{
 }
 
 .connect-img{
-    width: 5vh;
+    width: 8vh;
     transition: transform 0.2s;   
 }
-.connect-img:hover{
-    transform: rotate(-30deg);
-}
+
 .connect-links{
-    padding-bottom: 2vh;
+    padding-bottom: 4vh;
+}
+
+.results{
+    text-align: center;
+    margin-top: 5vh;
+    font-size: 3vh;
+    width: 10vh;
+    position: relative;
+}
+
+.results:after{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 15vh;
+    height: 2px;
+    background-color: black;
+    top: 55%;
+    left: -15vh;
+}
+
+.results:before{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 15vh;
+    height: 2px;
+    background-color: black;
+    top: 55%;
+    right: -15vh;
+}
+
+.img-gallery{
+    width: 100%;
+    padding-bottom: 4vh;
+    /* margin: 0 10% 5vh 10%; */
+    min-height: 10vh;
+    /* border-bottom: 2px solid black; */
+}
+
+.img-gallery img{
+    width: 40%;
+    aspect-ratio: 2/1;
+    border: 1px solid #ccc;
+    padding: 3px;
+    background-color: white;
+}
+.img-gallery img:nth-of-type(odd){
+    margin: 1vh 1% 1vh 6%;
+}
+
+.img-gallery img:nth-of-type(even){
+    margin: 1vh 6% 1vh 1%;
 }
 
 @media only screen and (min-width: 900px) {
@@ -301,4 +352,63 @@ ul.place-list{
         padding-bottom: 2vw;
     }
 
+    .connect-img:hover{
+        transform: rotate(-30deg);
+    }
+ 
+}
+
+@media only screen and (min-width: 970px) {
+    .results{
+        text-align: center;
+        margin-top: 5vw;
+        font-size: 3vw;
+        width: 10vw;
+        position: relative;
+    }
+    
+    .results:after{
+        content: '';
+        display: inline-block;
+        position: absolute;
+        width: 30.5vw;
+        height: 2px;
+        background-color: black;
+        top: 55%;
+        left: -30.5vw;
+    }
+    
+    .results:before{
+        content: '';
+        display: inline-block;
+        position: absolute;
+        width: 30.5vw;
+        height: 2px;
+        background-color: black;
+        top: 55%;
+        right: -30.5vw;
+    }
+    
+    .img-gallery{
+        width: 80%;
+        margin: 0 10% 5vw 10%;
+        min-height: 10vw;
+        border-bottom: 2px solid black;
+    }
+    
+    .img-gallery img{
+        width: 30%;
+        aspect-ratio: 2/1;
+        border: 1px solid #ccc;
+      
+        padding: 5px;
+        background-color: white;
+    }
+    .img-gallery img:nth-of-type(odd){
+        margin: 1vw 2% 1vw 16%;
+    }
+    
+    .img-gallery img:nth-of-type(even){
+        margin: 1vw 16% 1vw 2%;
+    }
 }
